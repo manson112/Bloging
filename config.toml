@@ -330,7 +330,7 @@ canonifyurls = true
   [params.comment]
     [params.comment.disqus]
       enable = true
-      shortname = "hugo-tranquilpeak-theme"
+      shortname = "blog-comments"
     [params.comment.gitalk]
       enable = false
       # clientId =
