@@ -19,7 +19,7 @@ Spring에 Mybatis를 연동 방법을 알아보자. 의외로 매우 간단하�
 
 Dependency로는 Lombok, Spring Web, 그리고 오늘 사용할 Mybatis Framework, 데이터베이스를 따로 설정하지 않고 메모리에서 동작하게 할 것이기 때문에 가벼운 H2 Database를 선택했다.
 
-![Screen Shot 2022-08-21 at 5.25.09 PM.png](/Screen_Shot_2022-08-21_at_5.25.09_PM.png)
+![Screen Shot 2022-08-21 at 5.25.09 PM.png](Screen_Shot_2022-08-21_at_5.25.09_PM.png)
 
 이제 Generate를 클릭하고 압축을 푼 후에 IntelliJ 에서 열어주자
 
@@ -27,7 +27,7 @@ Dependency로는 Lombok, Spring Web, 그리고 오늘 사용할 Mybatis Framewor
 
 Springboot를 한번 실행시켜 본다. 
 
-![Screen Shot 2022-08-21 at 5.33.07 PM.png](/Screen_Shot_2022-08-21_at_5.33.07_PM.png)
+![Screen Shot 2022-08-21 at 5.33.07 PM.png](Screen_Shot_2022-08-21_at_5.33.07_PM.png)
 
 # 3. H2 Console 설정
 
@@ -48,11 +48,11 @@ spring.h2.console.path=/h2-console // 콘솔의 경로를 변경할 수 있다.
 
 브라우저를 열어 [http://localhost:8080/h2-console](http://localhost:8080/h2-console) 로 접속하면 다음과 같은 화면을 확인할 수 있다.
 
-![Screen Shot 2022-08-21 at 6.23.36 PM.png](/Screen_Shot_2022-08-21_at_6.23.36_PM.png)
+![Screen Shot 2022-08-21 at 6.23.36 PM.png](Screen_Shot_2022-08-21_at_6.23.36_PM.png)
 
 기본적으로 설정이 들어가 있는데, 위에서 같은 설정으로 서버를 실행했기 때문에 수정하지 않고 연결 버튼을 누르면, 다음과 같이 콘솔에 접속된다.
 
-![Screen Shot 2022-08-21 at 6.24.45 PM.png](/Screen_Shot_2022-08-21_at_6.24.45_PM.png)
+![Screen Shot 2022-08-21 at 6.24.45 PM.png](Screen_Shot_2022-08-21_at_6.24.45_PM.png)
 
 # 4. 테이블 생성
 
@@ -71,7 +71,7 @@ insert into tb_mybatis_test (name) values ('name5');
 
 성공 했다면 Select 쿼리를 날려 데이터가 잘 들어갔는지 확인해보자.
 
-![Screen Shot 2022-08-21 at 6.27.45 PM.png](/Screen_Shot_2022-08-21_at_6.27.45_PM.png)
+![Screen Shot 2022-08-21 at 6.27.45 PM.png](Screen_Shot_2022-08-21_at_6.27.45_PM.png)
 
 # 5. Springboot에서 조회하기 - Mapper
 
@@ -79,7 +79,7 @@ insert into tb_mybatis_test (name) values ('name5');
 
 디렉토리 구조는 다음과 같다.
 
-![Screen Shot 2022-08-21 at 6.29.55 PM.png](/Screen_Shot_2022-08-21_at_6.29.55_PM.png)
+![Screen Shot 2022-08-21 at 6.29.55 PM.png](Screen_Shot_2022-08-21_at_6.29.55_PM.png)
 
 일반적은 3계층 구조라면 Service도 필요하겠지만, 비즈니스 로직을 넣을 것이 아니기 때문에 생략했다.
 
@@ -147,12 +147,12 @@ Mapper가 Interface 인 것을 유의하자. 사용할 SQL을 Annotation으로 �
 
 저장하고 서버를 재실행 시킨 후 브라우저를 열어 [http://localhost:8080](http://localhost:8080) 에 접속해보자
 
-![Screen Shot 2022-08-21 at 6.39.26 PM.png](/Screen_Shot_2022-08-21_at_6.39.26_PM.png)
+![Screen Shot 2022-08-21 at 6.39.26 PM.png](Screen_Shot_2022-08-21_at_6.39.26_PM.png)
 
 테이블에 들어있는 데이터들이 모두 조회된다.
 
 다음은 [http://localhost:8080/1](http://localhost:8080/1) 을 입력하여 id가 1인 데이터가 잘 조회 되는지 확인해보자
 
-![Screen Shot 2022-08-21 at 6.41.38 PM.png](/Screen_Shot_2022-08-21_at_6.41.38_PM.png)
+![Screen Shot 2022-08-21 at 6.41.38 PM.png](Screen_Shot_2022-08-21_at_6.41.38_PM.png)
 
 [GitHub - manson112/spring-mybatis-sample](https://github.com/manson112/spring-mybatis-sample)
