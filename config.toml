@@ -330,7 +330,7 @@ canonifyurls = true
   [params.comment]
     [params.comment.disqus]
       enable = true
-      shortname = "hugo-tranquilpeak-theme"
+      shortname = "manson112-github-io"
     [params.comment.gitalk]
       enable = false
       # clientId =
