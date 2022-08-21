@@ -13,8 +13,8 @@
 # use grunt task `build` to synchronize assets
 
 baseURL = "https://manson112.github.io/"
-languageCode = "en-us"
-defaultContentLanguage = "en-us"
+languageCode = "ko-kr"
+defaultContentLanguage = "ko-kr"
 title = "Sam's Archive"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "manson112-github-io"
