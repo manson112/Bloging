@@ -1,5 +1,5 @@
 ---
-title: "Springboot Mybatis 로 DB 연결하기 - 1"
+title: "Springboot Mybatis 로 DB 연결하기 - 1 @Mapper Interface"
 date: 2022-08-22T00:03:39+09:00
 categories:
 - Spring
