@@ -5,6 +5,8 @@ categories:
 - Spring
 keywords:
 - tech
+- Mybatis
+
 #thumbnailImage: //example.com/image.jpg
 ---
 
